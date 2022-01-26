@@ -1,5 +1,4 @@
-'''Problem Statement
-A 10-substring of a number is a substring of its digits that sum up to 10.
+'''A 10-substring of a number is a substring of its digits that sum up to 10.
 
 For example, the 10-substrings of the number 3523014 are:
 3523014, 3523014, 3523014, 3523014
@@ -17,25 +16,25 @@ Expected Output
 ['5230', '23014', '523', '352']
 
 '''
+
 #lex_auth_01269442545042227276
 
 def find_ten_substring(num_str):
     #pass
     #Remove pass and write your logic here
-    pass
-    """num = []
+    n = []
     for i in range(0,len(num_str)):
-        new =[]
-        sum=0
-        for j in range(i,(len(num_str))):
-            sum += int(num_str[j])
-            new.append(num_str[j])
+        sum = 0
+        new = ''
+        for j in range(i,len(num_str)):
+            sum = sum + int(num_str[j])
+            new = new + (num_str[j])
             if sum == 10:
-                num.append(new)
-        print(new)
-    return num"""
+                n.append(new)
+    return n
+    
 
-num_str="2825302"
+num_str="3523014"
 print("The number is:",num_str)
 result_list=find_ten_substring(num_str)
 print(result_list)
